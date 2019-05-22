@@ -91,6 +91,19 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'wordpress' => [
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'database' => env('DB_WP_DATABASE', 'homestead'),
+            'username' => env('DB_WP_USERNAME', 'homestead'),
+            'password' => env('DB_WP_PASSWORD', 'secret'),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => env('DB_WP_PREFIX', 'wp_'),
+            'strict'    => false,
+            'engine'    => null,
+        ],
+
     ],
 
     /*
